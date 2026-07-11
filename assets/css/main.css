@@ -44,11 +44,13 @@ Version: 1.0
 37 Blog Standard CSS
 ************ TABLE OF CONTENTS ***************/
 :root {
-  --theme-color: #85BF18;
-  --theme-shade-color: #99EF68;
-  --theme-color-2: #FFE175;
-  --theme-color-3: #004540;
-  --title-color: #15161C;
+  --theme-color: #070707;
+  --theme-shade-color: #696773;
+  --theme-color-2: #009fb7;
+  --theme-color-3: #8ea604;
+  --theme-color-4:#fffffa;
+  --theme-color-5:#25cad9;
+  --title-color: #D00000;
   --body-color: #868681;
   --gray-color: #383838;
   --warning-color: #FFB539;
@@ -592,7 +594,7 @@ label {
   font-weight: 600;
   font-size: 17px;
   line-height: 100%;
-  color: var(--theme-color-3);
+  color: var(--theme-color-4);
   padding: 16px 25px;
   background: var(--theme-color-2);
   border-radius: 100px;
@@ -719,13 +721,13 @@ label {
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
-.e-primary-btn.is-hover-white:before {
-  background: var(--white-color);
+.e-primary-btn.is-hover-grey:before {
+  background: var(--theme-color);
 }
-.e-primary-btn.is-hover-white:hover {
-  color: var(--theme-color-3);
+.e-primary-btn.is-hover-grey:hover {
+  color: var(--theme-color-4);
 }
-.e-primary-btn.is-hover-white:hover .icon-wrap {
+.e-primary-btn.is-hover-grey:hover .icon-wrap {
   background: var(--theme-color-2);
   color: var(--theme-color-3);
 }
@@ -757,9 +759,22 @@ label {
 /* 04 Header Css */
 .logo-wrap img {
   width: 100%;
-  max-width: 165px;
+    max-width: none;
 }
+.logo-wrap-1 {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(14.75px);
+  border-radius: 0 0 16px 0;
 
+}
+@media (max-width: 1399px) {
+  .logo-wrap-1 {
+    padding: 20px;
+  }
+}
+.logo-wrap-1 img {
+  max-width: 300px;
+}
 .logo-wrap-2 {
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(14.75px);
@@ -2558,13 +2573,13 @@ label {
   border-radius: 0;
 }
 .footer-section-2 .footer-bottom .footer-bottom-layout .footer-copyright {
-  color: var(--theme-color-3);
+  color: var(--theme-color-4);
 }
 .footer-section-2 .footer-bottom .footer-bottom-layout .footer-bottom-menu ul li a {
-  color: var(--theme-color-3);
+  color: var(--theme-color-4);
 }
 .footer-section-2 .footer-bottom .footer-bottom-layout .footer-bottom-menu ul li a:hover {
-  color: var(--white-color);
+  color: var(--theme-color);
 }
 .footer-section-2 .footer-bottom .footer-bottom-layout .footer-bottom-menu ul li:before {
   width: 0;
@@ -3488,11 +3503,11 @@ label {
 }
 .hero-content-1 .join-us .e-primary-btn .icon-wrap {
   background: var(--theme-color-2);
-  color: var(--theme-color-3);
+  color: var(--theme-color-4);
 }
 .hero-content-1 .join-us .e-primary-btn:hover {
   border: 1.5px solid var(--theme-color-2);
-  color: var(--theme-color-3);
+  color: var(--theme-color-4);
 }
 .hero-content-1 .join-us .e-primary-btn:hover .icon-wrap {
   background: var(--theme-color-3);
@@ -10018,7 +10033,7 @@ label {
   width: 100%;
 }
 .section-top-2 .left .common-subtitle span {
-  color: var(--theme-color-2);
+  color: var(--theme-color);
 }
 .section-top-2 .left .common-title {
   margin-bottom: 0;
@@ -10046,7 +10061,7 @@ label {
   gap: 8px;
   padding: 0;
   background: transparent;
-  color: var(--theme-color-2);
+  color: var(--theme-color);
 }
 .section-top-2 .right .service-btn:before {
   background: transparent;
@@ -10057,7 +10072,7 @@ label {
 .section-top-2 .right .service-btn .icon-wrap {
   width: auto;
   height: auto;
-  color: var(--theme-color-2);
+  color: var(--theme-color);
   background: transparent;
 }
 .section-top-2 .right .service-btn .icon-wrap:hover {
@@ -11833,7 +11848,7 @@ label {
   height: 25px;
   border-radius: 100%;
   background: var(--theme-color-3);
-  color: var(--theme-color-2);
+  color: var(--theme-color-4);
 }
 
 .why-us-section-2 {
@@ -14481,7 +14496,7 @@ label {
   line-height: 86%;
   margin-bottom: 0;
   color: transparent;
-  -webkit-text-stroke: 1px var(--theme-color-3);
+  -webkit-text-stroke: 1px var(--theme-color-4);
   font-style: normal;
   font-weight: 600;
   font-size: 70px;
@@ -14507,7 +14522,7 @@ label {
   font-weight: 600;
   font-size: 17px;
   line-height: 26px;
-  color: var(--theme-color-3);
+  color: var(--theme-color-4);
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .shape-wrapped-thumb-1 .experience-shape-2 p {
@@ -14844,7 +14859,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--theme-color-2);
+  color: var(--theme-color-4);
   width: 20px;
   height: 20px;
   background-color: var(--theme-color-3);
